@@ -7,12 +7,24 @@
 //
 
 import UIKit
+import SnapKit
 
 class MainVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let helloLabel = UILabel();
+        
+        helloLabel.text = "Hello 快递侠!";
+        
+        self.view.addSubview(helloLabel)
+        
+        
+        helloLabel.snp_makeConstraints { (make) in
+            make.center.equalTo(self.view)
+        }
+        
         // Do any additional setup after loading the view.
     }
 
