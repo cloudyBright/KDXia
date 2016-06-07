@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46F3F9D9E8AE713FB9A89425 /* Pods_KDXiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8974CAC16DCB36AB019AA401 /* Pods_KDXiaTests.framework */; };
+		5BC6AD671D0643C600643E41 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC6AD661D0643C600643E41 /* MainVC.swift */; };
 		5BE869601D0633F300E7A7DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE8695F1D0633F300E7A7DC /* AppDelegate.swift */; };
 		5BE869621D0633F300E7A7DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE869611D0633F300E7A7DC /* ViewController.swift */; };
 		5BE869651D0633F300E7A7DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE869631D0633F300E7A7DC /* Main.storyboard */; };
 		5BE869671D0633F300E7A7DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE869661D0633F300E7A7DC /* Assets.xcassets */; };
 		5BE8696A1D0633F300E7A7DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE869681D0633F300E7A7DC /* LaunchScreen.storyboard */; };
 		5BE869751D0633F300E7A7DC /* KDXiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE869741D0633F300E7A7DC /* KDXiaTests.swift */; };
+		A3F8804342DE768562F4B0F4 /* Pods_KDXia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E7EDF14B1399EDE425302C /* Pods_KDXia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		049F67E4218A7B4DD7E6CCB5 /* Pods-KDXia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDXia.release.xcconfig"; path = "Pods/Target Support Files/Pods-KDXia/Pods-KDXia.release.xcconfig"; sourceTree = "<group>"; };
+		5BC6AD661D0643C600643E41 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		5BE8695C1D0633F300E7A7DC /* KDXia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KDXia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE8695F1D0633F300E7A7DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BE869611D0633F300E7A7DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +41,11 @@
 		5BE869701D0633F300E7A7DC /* KDXiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KDXiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE869741D0633F300E7A7DC /* KDXiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDXiaTests.swift; sourceTree = "<group>"; };
 		5BE869761D0633F300E7A7DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A1329FDFAD240C8B530C4C2 /* Pods-KDXiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDXiaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KDXiaTests/Pods-KDXiaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8974CAC16DCB36AB019AA401 /* Pods_KDXiaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KDXiaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0E7EDF14B1399EDE425302C /* Pods_KDXia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KDXia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6735709B33CF9FE17F1B09 /* Pods-KDXia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDXia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KDXia/Pods-KDXia.debug.xcconfig"; sourceTree = "<group>"; };
+		D2ABEBE2E8A99F11871584DB /* Pods-KDXiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDXiaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KDXiaTests/Pods-KDXiaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3F8804342DE768562F4B0F4 /* Pods_KDXia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +61,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F3F9D9E8AE713FB9A89425 /* Pods_KDXiaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		204FA2EFBB0DD8F1D3ABC692 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB6735709B33CF9FE17F1B09 /* Pods-KDXia.debug.xcconfig */,
+				049F67E4218A7B4DD7E6CCB5 /* Pods-KDXia.release.xcconfig */,
+				7A1329FDFAD240C8B530C4C2 /* Pods-KDXiaTests.debug.xcconfig */,
+				D2ABEBE2E8A99F11871584DB /* Pods-KDXiaTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5BC6AD681D0643E400643E41 /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				5BC6AD661D0643C600643E41 /* MainVC.swift */,
+			);
+			name = MainVC;
+			sourceTree = "<group>";
+		};
+		5BC6AD691D0643FF00643E41 /* AddKDVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AddKDVC;
+			sourceTree = "<group>";
+		};
+		5BC6AD6A1D06441A00643E41 /* KDDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = KDDetailVC;
+			sourceTree = "<group>";
+		};
 		5BE869531D0633F300E7A7DC = {
 			isa = PBXGroup;
 			children = (
 				5BE8695E1D0633F300E7A7DC /* KDXia */,
 				5BE869731D0633F300E7A7DC /* KDXiaTests */,
 				5BE8695D1D0633F300E7A7DC /* Products */,
+				204FA2EFBB0DD8F1D3ABC692 /* Pods */,
+				B2F27CDD731A415146F0BA11 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +124,9 @@
 		5BE8695E1D0633F300E7A7DC /* KDXia */ = {
 			isa = PBXGroup;
 			children = (
+				5BC6AD6A1D06441A00643E41 /* KDDetailVC */,
+				5BC6AD691D0643FF00643E41 /* AddKDVC */,
+				5BC6AD681D0643E400643E41 /* MainVC */,
 				5BE8695F1D0633F300E7A7DC /* AppDelegate.swift */,
 				5BE869611D0633F300E7A7DC /* ViewController.swift */,
 				5BE869631D0633F300E7A7DC /* Main.storyboard */,
@@ -96,6 +146,15 @@
 			path = KDXiaTests;
 			sourceTree = "<group>";
 		};
+		B2F27CDD731A415146F0BA11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0E7EDF14B1399EDE425302C /* Pods_KDXia.framework */,
+				8974CAC16DCB36AB019AA401 /* Pods_KDXiaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BE869791D0633F300E7A7DC /* Build configuration list for PBXNativeTarget "KDXia" */;
 			buildPhases = (
+				A0A7E33BC2D953E34DF92D8E /* 📦 Check Pods Manifest.lock */,
 				5BE869581D0633F300E7A7DC /* Sources */,
 				5BE869591D0633F300E7A7DC /* Frameworks */,
 				5BE8695A1D0633F300E7A7DC /* Resources */,
+				9CE6F814B7B733E339539D75 /* 📦 Embed Pods Frameworks */,
+				BBB25F8CDAE461075923FEA7 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BE8697C1D0633F300E7A7DC /* Build configuration list for PBXNativeTarget "KDXiaTests" */;
 			buildPhases = (
+				36F8C8521BEAB065E0B9B0FB /* 📦 Check Pods Manifest.lock */,
 				5BE8696C1D0633F300E7A7DC /* Sources */,
 				5BE8696D1D0633F300E7A7DC /* Frameworks */,
 				5BE8696E1D0633F300E7A7DC /* Resources */,
+				595F07E6C41D96E36C0606E3 /* 📦 Embed Pods Frameworks */,
+				C050A379B6F602538FB6C8DB /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,12 +259,106 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36F8C8521BEAB065E0B9B0FB /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		595F07E6C41D96E36C0606E3 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KDXiaTests/Pods-KDXiaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CE6F814B7B733E339539D75 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KDXia/Pods-KDXia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0A7E33BC2D953E34DF92D8E /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BBB25F8CDAE461075923FEA7 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KDXia/Pods-KDXia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C050A379B6F602538FB6C8DB /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KDXiaTests/Pods-KDXiaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5BE869581D0633F300E7A7DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5BE869621D0633F300E7A7DC /* ViewController.swift in Sources */,
+				5BC6AD671D0643C600643E41 /* MainVC.swift in Sources */,
 				5BE869601D0633F300E7A7DC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,9 +486,11 @@
 		};
 		5BE8697A1D0633F300E7A7DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB6735709B33CF9FE17F1B09 /* Pods-KDXia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KDXia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ywn.KDXia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -338,9 +499,11 @@
 		};
 		5BE8697B1D0633F300E7A7DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 049F67E4218A7B4DD7E6CCB5 /* Pods-KDXia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KDXia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ywn.KDXia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -349,6 +512,7 @@
 		};
 		5BE8697D1D0633F300E7A7DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A1329FDFAD240C8B530C4C2 /* Pods-KDXiaTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = KDXiaTests/Info.plist;
@@ -361,6 +525,7 @@
 		};
 		5BE8697E1D0633F300E7A7DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2ABEBE2E8A99F11871584DB /* Pods-KDXiaTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = KDXiaTests/Info.plist;
@@ -390,6 +555,7 @@
 				5BE8697B1D0633F300E7A7DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5BE8697C1D0633F300E7A7DC /* Build configuration list for PBXNativeTarget "KDXiaTests" */ = {
 			isa = XCConfigurationList;
@@ -398,6 +564,7 @@
 				5BE8697E1D0633F300E7A7DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
