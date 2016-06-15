@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		46F3F9D9E8AE713FB9A89425 /* Pods_KDXiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8974CAC16DCB36AB019AA401 /* Pods_KDXiaTests.framework */; };
+		5BAC4B4A1D118C5500638D5F /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAC4B491D118C5500638D5F /* MainTableViewCell.swift */; };
 		5BC6AD671D0643C600643E41 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC6AD661D0643C600643E41 /* MainVC.swift */; };
 		5BE869601D0633F300E7A7DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE8695F1D0633F300E7A7DC /* AppDelegate.swift */; };
 		5BE869621D0633F300E7A7DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE869611D0633F300E7A7DC /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		049F67E4218A7B4DD7E6CCB5 /* Pods-KDXia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDXia.release.xcconfig"; path = "Pods/Target Support Files/Pods-KDXia/Pods-KDXia.release.xcconfig"; sourceTree = "<group>"; };
+		5BAC4B491D118C5500638D5F /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		5BC6AD661D0643C600643E41 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		5BE66CB21D06492B0034204D /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SnapKit.framework; path = "/Users/yinliang/Library/Developer/Xcode/DerivedData/KDXia-hktahehbzlvjwvagevldmudwzhni/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework"; sourceTree = "<absolute>"; };
 		5BE8695C1D0633F300E7A7DC /* KDXia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KDXia.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				5BC6AD661D0643C600643E41 /* MainVC.swift */,
+				5BAC4B491D118C5500638D5F /* MainTableViewCell.swift */,
 			);
 			name = MainVC;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				5BE869621D0633F300E7A7DC /* ViewController.swift in Sources */,
 				5BC6AD671D0643C600643E41 /* MainVC.swift in Sources */,
 				5BE869601D0633F300E7A7DC /* AppDelegate.swift in Sources */,
+				5BAC4B4A1D118C5500638D5F /* MainTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
