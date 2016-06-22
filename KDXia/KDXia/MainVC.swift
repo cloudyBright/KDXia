@@ -7,27 +7,12 @@
 //
 import Foundation
 import UIKit
-import SnapKit
 
-class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MainVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        
-        let mainTableView = UITableView();
-        
-        mainTableView.delegate = self;
-        mainTableView.dataSource = self;
-        
-        
-        self.view.addSubview(mainTableView);
-        
-        
-        mainTableView.snp_makeConstraints { (make) in
-            make.edges.equalTo(self.view)
-        }
         
         // Do any additional setup after loading the view.
     }
@@ -38,19 +23,6 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    //MARK: - UITableViewdataSource
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
-    }
-    
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath);
-        
-        cell.textLabel?.text = "\(indexPath)";
-        return cell;
     }
     
 

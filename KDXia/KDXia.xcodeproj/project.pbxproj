@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		46F3F9D9E8AE713FB9A89425 /* Pods_KDXiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8974CAC16DCB36AB019AA401 /* Pods_KDXiaTests.framework */; };
-		5BAC4B4A1D118C5500638D5F /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAC4B491D118C5500638D5F /* MainTableViewCell.swift */; };
 		5BC6AD671D0643C600643E41 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC6AD661D0643C600643E41 /* MainVC.swift */; };
 		5BE869601D0633F300E7A7DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE8695F1D0633F300E7A7DC /* AppDelegate.swift */; };
 		5BE869621D0633F300E7A7DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE869611D0633F300E7A7DC /* ViewController.swift */; };
@@ -31,9 +30,7 @@
 
 /* Begin PBXFileReference section */
 		049F67E4218A7B4DD7E6CCB5 /* Pods-KDXia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDXia.release.xcconfig"; path = "Pods/Target Support Files/Pods-KDXia/Pods-KDXia.release.xcconfig"; sourceTree = "<group>"; };
-		5BAC4B491D118C5500638D5F /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		5BC6AD661D0643C600643E41 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
-		5BE66CB21D06492B0034204D /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SnapKit.framework; path = "/Users/yinliang/Library/Developer/Xcode/DerivedData/KDXia-hktahehbzlvjwvagevldmudwzhni/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework"; sourceTree = "<absolute>"; };
 		5BE8695C1D0633F300E7A7DC /* KDXia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KDXia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE8695F1D0633F300E7A7DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BE869611D0633F300E7A7DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				5BC6AD661D0643C600643E41 /* MainVC.swift */,
-				5BAC4B491D118C5500638D5F /* MainTableViewCell.swift */,
 			);
 			name = MainVC;
 			sourceTree = "<group>";
@@ -108,7 +104,6 @@
 		5BE869531D0633F300E7A7DC = {
 			isa = PBXGroup;
 			children = (
-				5BE66CB21D06492B0034204D /* SnapKit.framework */,
 				5BE8695E1D0633F300E7A7DC /* KDXia */,
 				5BE869731D0633F300E7A7DC /* KDXiaTests */,
 				5BE8695D1D0633F300E7A7DC /* Products */,
@@ -167,12 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BE869791D0633F300E7A7DC /* Build configuration list for PBXNativeTarget "KDXia" */;
 			buildPhases = (
-				A0A7E33BC2D953E34DF92D8E /* 📦 Check Pods Manifest.lock */,
+				A0A7E33BC2D953E34DF92D8E /* [CP] Check Pods Manifest.lock */,
 				5BE869581D0633F300E7A7DC /* Sources */,
 				5BE869591D0633F300E7A7DC /* Frameworks */,
 				5BE8695A1D0633F300E7A7DC /* Resources */,
-				9CE6F814B7B733E339539D75 /* 📦 Embed Pods Frameworks */,
-				BBB25F8CDAE461075923FEA7 /* 📦 Copy Pods Resources */,
+				9CE6F814B7B733E339539D75 /* [CP] Embed Pods Frameworks */,
+				BBB25F8CDAE461075923FEA7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,12 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BE8697C1D0633F300E7A7DC /* Build configuration list for PBXNativeTarget "KDXiaTests" */;
 			buildPhases = (
-				36F8C8521BEAB065E0B9B0FB /* 📦 Check Pods Manifest.lock */,
+				36F8C8521BEAB065E0B9B0FB /* [CP] Check Pods Manifest.lock */,
 				5BE8696C1D0633F300E7A7DC /* Sources */,
 				5BE8696D1D0633F300E7A7DC /* Frameworks */,
 				5BE8696E1D0633F300E7A7DC /* Resources */,
-				595F07E6C41D96E36C0606E3 /* 📦 Embed Pods Frameworks */,
-				C050A379B6F602538FB6C8DB /* 📦 Copy Pods Resources */,
+				595F07E6C41D96E36C0606E3 /* [CP] Embed Pods Frameworks */,
+				C050A379B6F602538FB6C8DB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,7 +211,7 @@
 				TargetAttributes = {
 					5BE8695B1D0633F300E7A7DC = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = UV6237F8EP;
+						DevelopmentTeam = 289853W2FE;
 					};
 					5BE8696F1D0633F300E7A7DC = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -265,14 +260,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		36F8C8521BEAB065E0B9B0FB /* 📦 Check Pods Manifest.lock */ = {
+		36F8C8521BEAB065E0B9B0FB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,14 +275,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		595F07E6C41D96E36C0606E3 /* 📦 Embed Pods Frameworks */ = {
+		595F07E6C41D96E36C0606E3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,14 +290,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KDXiaTests/Pods-KDXiaTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9CE6F814B7B733E339539D75 /* 📦 Embed Pods Frameworks */ = {
+		9CE6F814B7B733E339539D75 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,14 +305,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KDXia/Pods-KDXia-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A0A7E33BC2D953E34DF92D8E /* 📦 Check Pods Manifest.lock */ = {
+		A0A7E33BC2D953E34DF92D8E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,14 +320,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		BBB25F8CDAE461075923FEA7 /* 📦 Copy Pods Resources */ = {
+		BBB25F8CDAE461075923FEA7 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,14 +335,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KDXia/Pods-KDXia-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C050A379B6F602538FB6C8DB /* 📦 Copy Pods Resources */ = {
+		C050A379B6F602538FB6C8DB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,7 +360,6 @@
 				5BE869621D0633F300E7A7DC /* ViewController.swift in Sources */,
 				5BC6AD671D0643C600643E41 /* MainVC.swift in Sources */,
 				5BE869601D0633F300E7A7DC /* AppDelegate.swift in Sources */,
-				5BAC4B4A1D118C5500638D5F /* MainTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +489,7 @@
 			baseConfigurationReference = CB6735709B33CF9FE17F1B09 /* Pods-KDXia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: junfeng lu (LYHH2EXUZ3)";
 				INFOPLIST_FILE = KDXia/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -508,6 +503,7 @@
 			baseConfigurationReference = 049F67E4218A7B4DD7E6CCB5 /* Pods-KDXia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: junfeng lu (LYHH2EXUZ3)";
 				INFOPLIST_FILE = KDXia/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
