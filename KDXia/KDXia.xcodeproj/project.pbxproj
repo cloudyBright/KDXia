@@ -16,6 +16,7 @@
 		A3F8804342DE768562F4B0F4 /* Pods_KDXia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E7EDF14B1399EDE425302C /* Pods_KDXia.framework */; };
 		C463BF6E1D1B7DFD00E566BB /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C463BF6D1D1B7DFD00E566BB /* MainVC.swift */; };
 		C463BF701D1BAB0700E566BB /* KDDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C463BF6F1D1BAB0700E566BB /* KDDataHandler.swift */; };
+		C463BF731D1BB63E00E566BB /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C463BF721D1BB63E00E566BB /* CardModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B0E7EDF14B1399EDE425302C /* Pods_KDXia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KDXia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C463BF6D1D1B7DFD00E566BB /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		C463BF6F1D1BAB0700E566BB /* KDDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDDataHandler.swift; sourceTree = "<group>"; };
+		C463BF721D1BB63E00E566BB /* CardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		CB6735709B33CF9FE17F1B09 /* Pods-KDXia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDXia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KDXia/Pods-KDXia.debug.xcconfig"; sourceTree = "<group>"; };
 		D2ABEBE2E8A99F11871584DB /* Pods-KDXiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDXiaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KDXiaTests/Pods-KDXiaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				C463BF6F1D1BAB0700E566BB /* KDDataHandler.swift */,
+				C463BF721D1BB63E00E566BB /* CardModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C463BF731D1BB63E00E566BB /* CardModel.swift in Sources */,
 				5BE869601D0633F300E7A7DC /* AppDelegate.swift in Sources */,
 				C463BF6E1D1B7DFD00E566BB /* MainVC.swift in Sources */,
 				C463BF701D1BAB0700E566BB /* KDDataHandler.swift in Sources */,

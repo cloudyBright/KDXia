@@ -15,11 +15,20 @@ class MainVC: UIViewController {
     var _leftBtn:UIButton?
     var _rightBtn:UIButton?
     var _centerContainerView:UIView?
+    
     var _cFuncView:UIView?
+    var _cPlaySoundBtn:UIButton?
+    var _cSwitchBtn:UIButton?
+    var _cRecordBtn:UIButton?
+    
+    var _cBackImgView:UIImageView?
     var _cImgView:UIImageView?
     var _cTextLabel:UILabel?
+    var _allData:Array<CardModel>?
     
-    let verMargin = 5
+    var _curIndex = 0 //当前卡片所在索引
+    
+    let verMargin = 12
     let horMargin = 10
     
     //MARK: - func
@@ -28,6 +37,11 @@ class MainVC: UIViewController {
 
         createSubviews()
         configSubViews()
+        
+        _allData = KDDataHandler.sharedInstance._allData
+       
+        loadData(_allData![_curIndex])
+        
         // Do any additional setup after loading the view.
     }
     
@@ -35,7 +49,12 @@ class MainVC: UIViewController {
         super.viewWillAppear(animated)
     }
     
-    
+    func loadData(cardItem:CardModel) {
+        
+        _cImgView?.image = UIImage(named: cardItem._imgName!)
+        _cTextLabel?.text = cardItem._text
+    }
+
     
     private func configSubViews() {
         
@@ -61,60 +80,113 @@ class MainVC: UIViewController {
             make.height.equalTo(30)
         })
         
-        _cImgView?.snp_makeConstraints(closure: { (make) in
-            make.top.equalTo(_cFuncView!.snp_bottom).offset(verMargin)
-            make.left.equalTo(_centerContainerView!).offset(horMargin)
-            make.right.equalTo(_centerContainerView!).offset(-horMargin)
+        _cPlaySoundBtn?.snp_makeConstraints(closure: { (make) in
+            make.left.equalTo(_cFuncView!).offset(20)
+            make.width.height.equalTo(30)
+            make.centerY.equalTo(_cFuncView!)
         })
-        
         
         _cTextLabel?.snp_makeConstraints(closure: { (make) in
-            make.top.equalTo(_cImgView!.snp_bottom).offset(verMargin)
-            make.bottom.equalTo(_centerContainerView!).offset(-verMargin)
-            make.left.equalTo(_centerContainerView!).offset(horMargin)
-            make.right.equalTo(_centerContainerView!).offset(-horMargin)
-            make.height.equalTo(30)
-            
+            make.center.equalTo(_cFuncView!)
         })
+        
+        _cRecordBtn?.snp_makeConstraints(closure: { (make) in
+            make.right.equalTo(_cFuncView!).offset(-20)
+            make.width.height.equalTo(30)
+            make.centerY.equalTo(_cFuncView!)
+        })
+        
+        
+        _cBackImgView?.snp_makeConstraints(closure: { (make) in
+            make.top.equalTo(_cFuncView!.snp_bottom).offset(2)
+            make.bottom.equalTo(_centerContainerView!).offset(-2)
+            make.left.right.equalTo(_centerContainerView!)
+        })
+        
+        _cImgView?.snp_makeConstraints(closure: { (make) in
+            make.top.left.equalTo(_cBackImgView!).offset(25)
+            make.right.bottom.equalTo(_cBackImgView!).offset(-25)
+        })
+
         
     }
 
+    func goPreCard() {
+        print("goPreCard")
+        
+        if _curIndex <= 0 {
+            return
+        }
+        _curIndex -= 1
+        loadData(_allData![_curIndex])
+    }
+    
+    func goNextCard() {
+        print("goNextCard")
+        
+        if _curIndex >= _allData!.count-1 {
+            return
+        }
+        
+        _curIndex += 1
+        loadData(_allData![_curIndex])
+    }
+    
+    func playSound() {
+        
+    }
+    
+    
     private func createSubviews() {
         //leftBtn
         _leftBtn = UIButton()
+        _leftBtn?.addTarget(self, action: #selector(MainVC.goPreCard), forControlEvents: .TouchUpInside)
         view.addSubview(_leftBtn!)
-        _leftBtn?.setTitle("上", forState: .Normal)
-        _leftBtn?.backgroundColor = UIColor.cyanColor()
-        
+        _leftBtn?.setImage(UIImage(named: "preArrow"), forState: .Normal)
        
         //rightBtn
         _rightBtn = UIButton()
+        _rightBtn?.addTarget(self, action: #selector(MainVC.goNextCard), forControlEvents: .TouchUpInside)
         view.addSubview(_rightBtn!)
-        _rightBtn?.setTitle("下", forState: .Normal)
-        _rightBtn?.backgroundColor = UIColor.cyanColor()
-        
+        _rightBtn?.setImage(UIImage(named: "nextArrow"), forState: .Normal)
         //centerContainerView
         _centerContainerView = UIView()
         view.addSubview(_centerContainerView!)
-        _centerContainerView?.backgroundColor = UIColor.grayColor()
        
         //funcView
         _cFuncView = UIView()
         _centerContainerView!.addSubview(_cFuncView!)
-        _cFuncView?.backgroundColor = UIColor.yellowColor()
-       
-        //imageView
-        _cImgView = UIImageView()
-        _centerContainerView!.addSubview(_cImgView!)
-        _cImgView?.backgroundColor = UIColor.cyanColor()
         
         
-       //textLabel
+        //funcView -- playSoundBtn
+        _cPlaySoundBtn = UIButton()
+        _cPlaySoundBtn!.addTarget(self, action: #selector(MainVC.playSound), forControlEvents: .TouchUpInside)
+        _cFuncView?.addSubview(_cPlaySoundBtn!)
+        _cPlaySoundBtn!.setImage(UIImage(named: "palySound"), forState: .Normal)
+        
+        //funcView -- switchBtn
         _cTextLabel = UILabel()
         _cTextLabel?.textAlignment = .Center
-        _centerContainerView!.addSubview(_cTextLabel!)
-        _cTextLabel?.backgroundColor = UIColor.brownColor()
-        _cTextLabel?.text = "显示文字"
+        _cFuncView?.addSubview(_cTextLabel!)
+        
+        //funcView -- recordBtn
+        _cRecordBtn = UIButton()
+        _cRecordBtn?.addTarget(self, action: #selector(MainVC.playSound), forControlEvents: .TouchUpInside)
+        _cFuncView?.addSubview(_cRecordBtn!)
+        _cRecordBtn?.setImage(UIImage(named: "record"), forState: .Normal)
+        
+        
+        //imageBackView
+        _cBackImgView = UIImageView()
+        _centerContainerView!.addSubview(_cBackImgView!)
+        _cBackImgView?.image = UIImage(named: "backImageV")
+        
+        //imageView
+        _cImgView = UIImageView()
+        _cImgView?.contentMode = .ScaleAspectFit
+        _cBackImgView!.addSubview(_cImgView!)
+        
+
        
         
     }
