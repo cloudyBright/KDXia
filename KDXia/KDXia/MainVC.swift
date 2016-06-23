@@ -10,13 +10,29 @@ import UIKit
 
 class MainVC: UIViewController {
 
+    //MARK: - properties
+    var _leftBtn:UIButton?
+    var _rightBtn:UIButton?
+    var _centerContainerView:UIView?
+    
+    
+    //MARK: - func
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
+        
         // Do any additional setup after loading the view.
     }
 
+    func createSubviews() {
+        _leftBtn = UIButton();
+        _rightBtn = UIButton();
+        
+        
+        
+        
+    }
     
     
     
