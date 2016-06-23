@@ -10,6 +10,7 @@ target 'KDXia' do
   # Pods for KDXia
   pod 'Alamofire'
   pod 'SnapKit', '~> 0.15.0'
+  pod 'SQLite.swift', '~> 0.10.1'
   target 'KDXiaTests' do
     inherit! :search_paths
     # Pods for testing
