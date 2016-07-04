@@ -19,17 +19,23 @@ class MainVC: UIViewController {
     var _cFuncView:UIView?
     var _cPlaySoundBtn:UIButton?
     var _cSwitchBtn:UIButton?
-    var _cRecordBtn:UIButton?
+    var _cRecordImgV:UIImageView?
     
     var _cBackImgView:UIImageView?
     var _cImgView:UIImageView?
     var _cTextLabel:UILabel?
-    var _allData:Array<CardModel>?
+    
+    var _recordingView:UIView?
+    
+    var _allData:Array<CardModel>?  //所有数据
+    
+    var _audioHandler:AudioHandler! //录音句柄
     
     var _curIndex = 0 //当前卡片所在索引
     
     let verMargin = 12
     let horMargin = 10
+    
     
     //MARK: - func
     override func viewDidLoad() {
@@ -62,6 +68,8 @@ class MainVC: UIViewController {
             make.left.top.bottom.equalTo(view)
             make.width.equalTo(view).multipliedBy(0.1)
         })
+        
+        
         _rightBtn?.snp_makeConstraints(closure: { (make) in
             make.right.top.bottom.equalTo(view)
             make.width.equalTo(_leftBtn!)
@@ -73,12 +81,14 @@ class MainVC: UIViewController {
             make.top.bottom.equalTo(view)
         })
         
+        
         _cFuncView?.snp_makeConstraints(closure: { (make) in
             make.left.equalTo(_centerContainerView!).offset(horMargin)
             make.right.equalTo(_centerContainerView!).offset(-horMargin)
             make.top.equalTo(_centerContainerView!).offset(verMargin)
             make.height.equalTo(30)
         })
+        
         
         _cPlaySoundBtn?.snp_makeConstraints(closure: { (make) in
             make.left.equalTo(_cFuncView!).offset(20)
@@ -90,13 +100,12 @@ class MainVC: UIViewController {
             make.center.equalTo(_cFuncView!)
         })
         
-        _cRecordBtn?.snp_makeConstraints(closure: { (make) in
+        _cRecordImgV?.snp_makeConstraints(closure: { (make) in
             make.right.equalTo(_cFuncView!).offset(-20)
             make.width.height.equalTo(30)
             make.centerY.equalTo(_cFuncView!)
         })
-        
-        
+         
         _cBackImgView?.snp_makeConstraints(closure: { (make) in
             make.top.equalTo(_cFuncView!.snp_bottom).offset(2)
             make.bottom.equalTo(_centerContainerView!).offset(-2)
@@ -107,7 +116,12 @@ class MainVC: UIViewController {
             make.top.left.equalTo(_cBackImgView!).offset(25)
             make.right.bottom.equalTo(_cBackImgView!).offset(-25)
         })
-
+        
+        _recordingView?.snp_makeConstraints(closure: { (make) in
+            make.center.equalTo(view)
+            make.height.equalTo(view).multipliedBy(1.0/2)
+            make.width.equalTo(view).multipliedBy(1.0/4)
+        })
         
     }
 
@@ -136,6 +150,27 @@ class MainVC: UIViewController {
         
     }
     
+    func record(gesture:UILongPressGestureRecognizer) {
+        if gesture.state == .Began {
+            print("record began....")
+            
+            _recordingView?.hidden = false
+            
+            let curItem = _allData![_curIndex]
+            _audioHandler = AudioHandler(cid: curItem._cid!)
+            
+            _audioHandler.startRecord()
+            
+            
+        } else if gesture.state == .Ended {
+            print("record end....")
+            
+            _audioHandler.stopRecord()
+            
+            _recordingView?.hidden = true
+        }
+        
+    }
     
     private func createSubviews() {
         //leftBtn
@@ -169,11 +204,14 @@ class MainVC: UIViewController {
         _cTextLabel?.textAlignment = .Center
         _cFuncView?.addSubview(_cTextLabel!)
         
-        //funcView -- recordBtn
-        _cRecordBtn = UIButton()
-        _cRecordBtn?.addTarget(self, action: #selector(MainVC.playSound), forControlEvents: .TouchUpInside)
-        _cFuncView?.addSubview(_cRecordBtn!)
-        _cRecordBtn?.setImage(UIImage(named: "record"), forState: .Normal)
+        //funcView -- recordImageView
+        _cRecordImgV = UIImageView()
+        _cRecordImgV?.userInteractionEnabled = true
+        _cFuncView?.addSubview(_cRecordImgV!)
+        _cRecordImgV?.image = UIImage(named: "record")
+        let longPressGR = UILongPressGestureRecognizer(target: self, action: #selector(MainVC.record))
+        longPressGR.minimumPressDuration = 3.0
+        _cRecordImgV?.addGestureRecognizer(longPressGR)
         
         
         //imageBackView
@@ -186,8 +224,11 @@ class MainVC: UIViewController {
         _cImgView?.contentMode = .ScaleAspectFit
         _cBackImgView!.addSubview(_cImgView!)
         
-
-       
+        //recordingView
+        _recordingView = RecordView(cframe: CGRect.zero)
+        view.addSubview(_recordingView!)
+        _recordingView?.hidden = true
+        
         
     }
     

@@ -41,6 +41,7 @@ class KDDataHandler: NSObject {
             }
             
             let cardItem = CardModel(text: tmpText, imgName: tmpImageName)
+            cardItem._cid = "\(i)"
             _allData?.append(cardItem)
             
         }

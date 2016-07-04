@@ -14,9 +14,15 @@
 		5BE8696A1D0633F300E7A7DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE869681D0633F300E7A7DC /* LaunchScreen.storyboard */; };
 		5BE869751D0633F300E7A7DC /* KDXiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE869741D0633F300E7A7DC /* KDXiaTests.swift */; };
 		A3F8804342DE768562F4B0F4 /* Pods_KDXia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E7EDF14B1399EDE425302C /* Pods_KDXia.framework */; };
+		C413EAC71D227172009FE000 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C413EAC61D227172009FE000 /* RecordView.swift */; };
+		C45893361D211EB300E99A9D /* AudioHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45893351D211EB300E99A9D /* AudioHandler.swift */; };
+		C45893381D21205F00E99A9D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45893371D21205F00E99A9D /* AVFoundation.framework */; };
 		C463BF6E1D1B7DFD00E566BB /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C463BF6D1D1B7DFD00E566BB /* MainVC.swift */; };
 		C463BF701D1BAB0700E566BB /* KDDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C463BF6F1D1BAB0700E566BB /* KDDataHandler.swift */; };
 		C463BF731D1BB63E00E566BB /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C463BF721D1BB63E00E566BB /* CardModel.swift */; };
+		C484C7EA1D26198D0032F10C /* SQLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C484C7E91D26198D0032F10C /* SQLHandler.swift */; };
+		C484C7EE1D2677560032F10C /* YLGlobalFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C484C7EC1D2677560032F10C /* YLGlobalFunc.swift */; };
+		C484C7EF1D2677560032F10C /* YLTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = C484C7ED1D2677560032F10C /* YLTools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +49,16 @@
 		7A1329FDFAD240C8B530C4C2 /* Pods-KDXiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDXiaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KDXiaTests/Pods-KDXiaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8974CAC16DCB36AB019AA401 /* Pods_KDXiaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KDXiaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E7EDF14B1399EDE425302C /* Pods_KDXia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KDXia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C413EAC61D227172009FE000 /* RecordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
+		C45893351D211EB300E99A9D /* AudioHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioHandler.swift; sourceTree = "<group>"; };
+		C45893371D21205F00E99A9D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C463BF6D1D1B7DFD00E566BB /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		C463BF6F1D1BAB0700E566BB /* KDDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDDataHandler.swift; sourceTree = "<group>"; };
 		C463BF721D1BB63E00E566BB /* CardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		C484C7E91D26198D0032F10C /* SQLHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLHandler.swift; sourceTree = "<group>"; };
+		C484C7EB1D261E470032F10C /* Test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Test.playground; sourceTree = "<group>"; };
+		C484C7EC1D2677560032F10C /* YLGlobalFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLGlobalFunc.swift; sourceTree = "<group>"; };
+		C484C7ED1D2677560032F10C /* YLTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLTools.swift; sourceTree = "<group>"; };
 		CB6735709B33CF9FE17F1B09 /* Pods-KDXia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDXia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KDXia/Pods-KDXia.debug.xcconfig"; sourceTree = "<group>"; };
 		D2ABEBE2E8A99F11871584DB /* Pods-KDXiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDXiaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KDXiaTests/Pods-KDXiaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C45893381D21205F00E99A9D /* AVFoundation.framework in Frameworks */,
 				A3F8804342DE768562F4B0F4 /* Pods_KDXia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,6 +143,7 @@
 		B2F27CDD731A415146F0BA11 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C45893371D21205F00E99A9D /* AVFoundation.framework */,
 				B0E7EDF14B1399EDE425302C /* Pods_KDXia.framework */,
 				8974CAC16DCB36AB019AA401 /* Pods_KDXiaTests.framework */,
 			);
@@ -155,6 +170,7 @@
 		C463BF6C1D1B7DEA00E566BB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C413EAC61D227172009FE000 /* RecordView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,6 +178,11 @@
 		C463BF711D1BAB1B00E566BB /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				C484C7EC1D2677560032F10C /* YLGlobalFunc.swift */,
+				C484C7ED1D2677560032F10C /* YLTools.swift */,
+				C45893351D211EB300E99A9D /* AudioHandler.swift */,
+				C484C7E91D26198D0032F10C /* SQLHandler.swift */,
+				C484C7EB1D261E470032F10C /* Test.playground */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -176,8 +197,8 @@
 				621CD3FB5577070BC017110A /* 📦 Check Pods Manifest.lock */,
 				A0A7E33BC2D953E34DF92D8E /* [CP] Check Pods Manifest.lock */,
 				5BE869581D0633F300E7A7DC /* Sources */,
-				5BE869591D0633F300E7A7DC /* Frameworks */,
 				5BE8695A1D0633F300E7A7DC /* Resources */,
+				5BE869591D0633F300E7A7DC /* Frameworks */,
 				9CE6F814B7B733E339539D75 /* [CP] Embed Pods Frameworks */,
 				BBB25F8CDAE461075923FEA7 /* [CP] Copy Pods Resources */,
 				2A147EBEEC437EB556FF808F /* 📦 Embed Pods Frameworks */,
@@ -464,9 +485,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C45893361D211EB300E99A9D /* AudioHandler.swift in Sources */,
+				C484C7EA1D26198D0032F10C /* SQLHandler.swift in Sources */,
+				C484C7EF1D2677560032F10C /* YLTools.swift in Sources */,
+				C413EAC71D227172009FE000 /* RecordView.swift in Sources */,
 				C463BF731D1BB63E00E566BB /* CardModel.swift in Sources */,
 				5BE869601D0633F300E7A7DC /* AppDelegate.swift in Sources */,
 				C463BF6E1D1B7DFD00E566BB /* MainVC.swift in Sources */,
+				C484C7EE1D2677560032F10C /* YLGlobalFunc.swift in Sources */,
 				C463BF701D1BAB0700E566BB /* KDDataHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
