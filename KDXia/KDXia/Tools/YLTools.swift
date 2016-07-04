@@ -56,9 +56,9 @@ class YLTools: NSObject {
     //MARK: 获取Document目录
     class func getDocumentPath() -> String
     {
-        let documentPaths =  NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)
+        let documentPath =  NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first!
         
-        return documentPaths[0] 
+        return documentPath
         
     }
 
